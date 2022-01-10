@@ -6,7 +6,7 @@ Project started in 2022-01-10[^1], at that time following technologies/framework
 
 - [x] git - as a code versioning system
 - [ ] github - as a repository hosting
-- [x] github wiki - for documentation
+- [x] github pages - for documentation
 - [ ] github actions - for workflow management
 - [ ] docker
 - [ ] openapi - for api documentation
