@@ -1,11 +1,6 @@
 ---
 title: GitHub Setup
 intro: Small manual to start your repository on GitHub for your project.
-versions:
-  fpt: '*'
-  ghes: '*'
-  ghae: '*'
-  ghec: '*'
 ---
 
 First we create a repository in GitHub. If you do not have account please create one.
@@ -41,22 +36,8 @@ git clone git@github.com:mergenchik/bellik.git
 
 please note that, you should have your SSH keys setup in your github profile.
 
-## Wiki Setup
+## Pages Setup
 
 The most important part of any software is documentation. Keeping documentation up to date is very difficult task.
 
-GitHub provides Wiki pages, a separate repository, where you can store documentation and manage it parallel to source code.
-
-In your repository click Wiki tab and you will see Wiki Section as on screen below.
-
-![empty wiki section](images/github_setup/03_wiki_section.png)
-
-Click on "create first page" and you will have screen as below.
-
-![new wiki page](images/github_setup/04_new_wiki_page.png)
-
-You can clone Wiki repository (please clone to separate location, not inside your other repository) with belo command.
-
-```
-git clone git@github.com:mergenchik/bellik.wiki.git
-```
+GitHub provides Pages. You can point directory in your repository, so github automatically will build it and publish as GitHub Pages for that repository.
