@@ -1,2 +1,3 @@
 # bellik
-note taking app tutorial
+
+Backend for bellik note taking app.
