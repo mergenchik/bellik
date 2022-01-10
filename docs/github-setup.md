@@ -41,3 +41,5 @@ please note that, you should have your SSH keys setup in your github profile.
 The most important part of any software is documentation. Keeping documentation up to date is very difficult task.
 
 GitHub provides Pages. You can point directory in your repository, so github automatically will build it and publish as GitHub Pages for that repository.
+
+![setup github pages](images/github_setup/03_github_pages_setup.png)
