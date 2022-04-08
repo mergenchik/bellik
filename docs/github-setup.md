@@ -1,9 +1,8 @@
 ---
 title: GitHub Setup
-intro: Small manual to start your repository on GitHub for your project.
 ---
 
-First we create a repository in GitHub. If you do not have account please create one.
+Small manual to start your repository on GitHub for your project. First we create a repository in GitHub. If you do not have account please create one.
 
 As a developer, it is recommended to have GitHub account, so that you can contribute some code to community. Also, some companies prefer developers who have GitHub account and contribute to open source. Treat your github profile as your CV. Please select your github username vicely. Also, it will be very good if you have the same email as your github username. Selecting avatar is also preferred. 
 

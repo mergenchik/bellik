@@ -11,7 +11,7 @@ Project started in 2022-01-10[^1], at that time following technologies/framework
 - [ ] docker
 - [ ] openapi - for api documentation
 - [ ] flask - for backend
-- [ ] vuejs - for web app
+- [ ] vuejs3 - for web app
 - [ ] flutter - for mobile app
 
 
@@ -27,4 +27,4 @@ You can use [SublimeMerge](https://www.sublimemerge.com/) as a git client, but c
 Please refer to [GitHub Setup](github-setup.md) for documentation.
 
 
-[^1]: Date format is intentionnaly YYYY-MM-DD.
+[^1]: Date format is intentionnaly YYYY-MM-DD and will be used through this project.
