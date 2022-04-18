@@ -124,3 +124,71 @@ If you redirect your browser to address in output you will see `Hello Flask`, if
 
 From now on, you have your hello world app running. It is strongly advised by your self experiment with `bellik/__init__.py`.
 
+
+## Unit Testing
+
+When you are developing complex application, you should use unit testing so changes introduced will not introduce bugs or break functionality.
+
+`pytest` will be used to write tests. Install `pytest` package in your virtual environment.
+
+```
+pip install pytest
+```
+
+Please read `pytest` [documentation](https://docs.pytest.org/en/6.2.x/contents.html) if you are not familiar with unit testing and more details.
+
+Now let's write first test, create `test_bellik.py` file in a `tests` directory. Final project layout will be as below.
+
+
+```
+.
+├── bellik
+│   ├── static
+│   ├── templates
+│   └── __init__.py
+├── CONTRIBUTING.md
+├── docs
+├── tests
+│   └── test_bellik.py
+├── LICENSE
+├── MANIFEST.in
+├── README.md
+└── setup.py
+
+```
+
+The contents of `test_bellik.py` is as below.
+
+```
+import os
+import tempfile
+
+import pytest
+
+from bellik import create_app
+
+
+@pytest.fixture
+def client():
+	app = create_app()
+
+	with app.test_client() as client:
+		yield client
+
+
+def test_hello_world(client):
+	rv = client.get('/hello')
+	assert b'Hello' in rv.data
+```
+
+Please note initializaiton method which is marked with `pytest.fixture` decorator, which will create application context for testing. Run `pytest` which will run tests or you can use `pytest -v` with more verbose output.
+
+
+## Environment variables from dotenv
+
+You can use `.env` or `.flaskenv` files to store your environment variables, which will be loaded automatically by `flask` command line interface. Please be sure that you install `python-dotenv` dependency so `flask` will able to use dotenv files. Contents of `.flaskenv` file as below.
+
+```
+FLASK_APP='bellik:create_app()'
+FLASK_ENV=development
+```

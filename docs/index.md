@@ -28,3 +28,8 @@ Please refer to [GitHub Setup](github-setup.md) for documentation.
 
 
 [^1]: Date format is intentionnaly YYYY-MM-DD and will be used through this project.
+
+
+## Flask Setup
+
+For initial flask project setup use [this](flask-project-setup.md) document.
